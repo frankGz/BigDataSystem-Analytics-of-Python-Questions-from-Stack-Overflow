@@ -1,0 +1,15 @@
+before running the app
+
+please create /app/Documents/EECS4415_project director in the docker environment
+and put everything in the zip file into that folder.
+
+part a:
+1. install all the python pacakges requeired by part_a
+2. enter "spark-submit part_a.py" to get two figures and two csv files.
+
+part b:
+1. install all the python pacakges requeired by part_b
+2. enter "spark-submit part_b_query_data.py 'question_string'" to get the top 10 user ids based on the cos similarity.
+
+because the data set is large, it may take long time to finish, better to take first 2000 rows from the id_features/part-00000 file
+
