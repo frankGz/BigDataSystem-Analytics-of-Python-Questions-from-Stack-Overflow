@@ -1,8 +1,8 @@
-#EECS4415 Group Project Report
+# EECS4415 Group Project Report
 
-##Analytics of Python Questions from Stack Overflow
+## Analytics of Python Questions from Stack Overflow
 
-##Instuction
+## Instuction
 before running the app
 
 please create /app/Documents/EECS4415_project director in the docker environment
@@ -21,7 +21,7 @@ because the data set is large, it may take long time to finish, better to take f
 
 
 
-##ABSTRACT
+## ABSTRACT
 
 This document is a report of Team Project of EECS4415 Big Data System Fall 2018. The project involves defining a problem, understanding the storage and processing needs (short term and long term) of a big data analytics solution and select an appropriate technical approach.
 
@@ -32,7 +32,7 @@ This project analyzes csv files of &quot;Python Questions from Stack Overflow&qu
 
 In this paper, we describe Motivation, Data and Data Analysis, Architecture of Proposed Solution, Evaluation/Result, and Conclusion.
 
-##KEYWORDS
+## KEYWORDS
 
 Big data, HDFS, Spark, Python, TF-IDF
 
@@ -42,7 +42,7 @@ Big data, HDFS, Spark, Python, TF-IDF
 
 This project is about to aggregate two tables, question-answer table and question-tags table, by finding the key words of each respondent so that we can build up a profile for each on them to identify their expertise areas. The resulting dataset can be served as an experts list to suggest experts for further incoming questions. This process includes two parts: A, find out the top tags for every respondent based on their answered questions&#39; tags. B, calculate their answered text to sort out a keywords list for each respondent.
 
-##1.2 Data Domain
+## 1.2 Data Domain
 
 
 
@@ -63,11 +63,11 @@ Our goal is to calculate the key technical words based on tags and keywords in t
 
 With this rigorous data analytics, we are able to identify the areas of expertise of each respondent. This makes it easy to recommend &quot;experts&quot; in related fields for new questions. Without this process, the original dataset does not have more information about answerer apart from their answered text, makes it intricate to group respondent. Our motivation is to build such a relationship to give every respondent a profile to identify their expertise areas.
 
-##1.4 Questions We Want To Answer
+## 1.4 Questions We Want To Answer
 
 The question we are going to answer is that for a new question posted, what are the existing users we can suggest to answer this question. To answer this question, we first have to answer, what are specialties of each respondent we have.
 
-##1.5 Application
+## 1.5 Application
 
 
 
